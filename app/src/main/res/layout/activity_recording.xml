@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milk.secretagent.RecordingActivity">
+
+    <include
+        android:id="@+id/tool_bar_record_settings"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/listViewRecordSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar_record_settings"
+        android:paddingLeft="@dimen/add_task_list_padding_left"/>
+
+    <TextView
+        android:id="@+id/listViewEmpty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Loading..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/cancel_record_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/floating_button_margin_bottom"
+        android:layout_marginLeft="@dimen/floating_button_margin_left"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:maxHeight="@dimen/floating_button_height"
+        android:maxWidth="@dimen/floating_button_width"
+        android:onClick="cancelRecordTask"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_cancel_task" />
+
+    <ImageView
+        android:id="@+id/submit_record_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/floating_button_margin_bottom"
+        android:layout_marginRight="@dimen/floating_button_margin_right"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:maxHeight="@dimen/floating_button_height"
+        android:maxWidth="@dimen/floating_button_width"
+        android:onClick="submitRecordTask"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_submit_task" />
+</RelativeLayout>

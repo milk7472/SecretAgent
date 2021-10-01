@@ -1,0 +1,319 @@
+<resources>
+    <string name="app_name">秘密任務代理人 Lite</string>
+    <string name="title_activity_add_task">新增任務</string>
+    <string name="title_activity_player">聲音播放器</string>
+    <string name="title_activity_main">秘密任務代理人 Lite</string>
+    <string name="title_activity_recording">定時錄音設定 (可用空間: %s)</string>
+    <string name="title_activity_location">定時位置記錄設定</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="title_activity_legal">法律聲明</string>
+    <string name="title_activity_about">關於</string>
+
+    <string name="action_settings">設定</string>
+    <string name="action_app_rate">請幫我評分</string>
+    <string name="action_app_info">取得秘密代理人完整版</string>
+    <string name="action_map_info">地圖資訊</string>
+
+    <string name="swipe_refresh_done">更新完成</string>
+
+    <!-- Current Tasks -->
+    <string name="task_waiting">待命中...</string>
+
+    <!-- Tabs -->
+    <string-array name="tab_titles">
+        <item>任務列表</item>
+        <item>錄音記錄</item>
+        <item>位置記錄</item>
+    </string-array>
+
+    <!-- Add Task -->
+    <string name="add_task_title">任務選單</string>
+    <string name="add_task_record">新增定時錄音任務</string>
+    <string name="add_task_location">新增定時位置記錄任務</string>
+
+    <!-- Dialog -->
+    <string name="dialog_next">下一個</string>
+    <string name="dialog_done">完成</string>
+
+    <!-- format -->
+    <string name="date_time_format">yyyy年MM月dd日 ah:mm</string>
+    <string name="date_format">yyyy年MM月dd日</string>
+    <string name="time_format">ah時mm分</string>
+
+    <!-- Tab Tasks -->
+    <string name="task_record_add_success">錄音任務新增成功</string>
+    <string name="task_location_add_success">位置記錄任務新增成功</string>
+    <string formatted="false" name="task_record_length">持續記錄: %s</string>
+    <string name="task_show_notification">通知顯示: 是</string>
+    <string name="task_not_show_notification">通知顯示: 否</string>
+
+    <string name="task_enum_status_waiting">待命中</string>
+    <string name="task_enum_status_running">執行中&#8230;</string>
+    <string name="task_enum_status_finished">已完成</string>
+
+    <string name="task_delete_dialog_title">刪除任務</string>
+    <string name="task_delete_dialog_message">是否要刪除此任務呢?</string>
+    <string name="task_delete_dialog_running_message">此任務正在執行中，確定要刪除任務嗎 (不會刪除已儲存之檔案)?</string>
+
+    <!-- Tab Recordings -->
+    <string formatted="false" name="recording_file_name">檔名: %s</string>
+    <string formatted="false" name="recording_file_length">長度: %s</string>
+    <string formatted="false" name="recording_file_size">大小: %s</string>
+
+    <string name="recording_edit_file_name">修改檔案名稱</string>
+    <string name="recording_edit_success">修改成功</string>
+
+    <string name="recording_share_file_title">分享此錄音紀錄</string>
+    <string formatted="false" name="recording_share_file_subject">[%s] 傳送錄音檔 %s</string>
+    <string formatted="false" name="recording_share_file_text">此檔案為任務執行時的聲音紀錄\n\n開始時間: %s\n結束時間: %s</string>
+
+    <string name="recording_delete_file_title">刪除檔案</string>
+    <string name="recording_delete_file_message">確定要刪除此錄音記錄?</string>
+    <string name="recording_delete_success">刪除成功</string>
+
+    <string name="progress_dialog_recording_title">請稍後</string>
+    <string name="progress_dialog_recording_message">錄音檔準備中...</string>
+
+    <!-- Tab Location -->
+    <string formatted="false" name="location_start">起點: %s</string>
+    <string formatted="false" name="location_end">終點: %s</string>
+    <string formatted="false" name="location_duration">記錄時間: %s</string>
+
+    <string name="location_share_file_title">分享此位置紀錄</string>
+    <string formatted="false" name="location_share_file_subject">[%s] 傳送位置紀錄檔 %s</string>
+    <string formatted="false" name="location_share_file_text">此檔案紀錄了任務執行時的所有地理位置資訊\n\n開始時間: %s\n結束時間: %s</string>
+
+    <string name="location_delete_file_title">刪除位置紀錄任務</string>
+    <string name="location_delete_file_message">確定要刪除此位置記錄?</string>
+    <string name="location_delete_success">刪除位置紀錄任務成功</string>
+
+    <string name="progress_dialog_location_title">請稍後</string>
+    <string name="progress_dialog_location_message">地圖準備中...</string>
+
+    <!-- Recording Settings -->
+    <string-array name="record_setting_titles">
+        <item>設定日期</item>
+        <item>設定時間</item>
+        <item>設定錄音長度</item>
+        <item>錄音時顯示通知</item>
+    </string-array>
+
+    <string-array name="record_setting_hints">
+        <item>點選以設定錄音開始日期</item>
+        <item>點選以設定錄音開始時間</item>
+        <item>點選以設定錄音長度</item>
+        <item>點選以設定通知顯示。開啟此功能會在錄音任務啟動後，在上方通知列表中出現錄音中之圖示，關閉則否。</item>
+    </string-array>
+
+    <string name="record_length_title">設定錄音長度</string>
+    <string name="record_length_description">請設定錄音時間長度，最小單位1分鐘，最長為%d小時。</string>
+    <string formatted="false" name="record_length_hour_minute_result">%d小時%d分鐘</string>
+    <string formatted="false" name="record_length_hour_result">%d小時</string>
+    <string formatted="false" name="record_length_minute_result">%d分鐘</string>
+
+    <string name="record_is_show_notification_title">錄音時顯示通知</string>
+    <string-array name="record_is_show_notification">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string name="record_not_finish">請先設定完以上項目</string>
+    <string name="task_past_time">請勿設定過去的時間</string>
+    <string name="record_time_not_available">此時段已經有錄音任務要執行</string>
+
+    <!-- Player -->
+    <string name="player_title">錄音播放器</string>
+
+    <!-- Location Settings -->
+    <string-array name="location_setting_titles">
+        <item>設定日期</item>
+        <item>設定時間</item>
+        <item>設定時間長度</item>
+        <item>記錄位置時顯示通知</item>
+    </string-array>
+
+    <string-array name="location_setting_hints">
+        <item>點選以設定位置記錄開始日期</item>
+        <item>點選以設定位置記錄開始時間</item>
+        <item>點選以設定記錄位置的時間長度</item>
+        <item>點選以設定通知顯示。開啟此功能會在位置任務啟動後，在上方通知列表中出現位置記錄中之圖示，關閉則否。</item>
+    </string-array>
+
+    <string name="location_record_length_title">設定記錄時間長度</string>
+    <string name="location_record_length_description">請設定記錄位置時間長度，最小單位1分鐘，最長為%d小時。</string>
+
+    <string name="location_is_show_notification_title">位置記錄時顯示通知</string>
+    <string-array name="location_record_is_show_notification">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string name="location_not_finish">請先設定完以上項目</string>
+    <string name="location_time_not_available">此時段已經有位置紀錄任務要執行</string>
+
+    <string name="location_dialog_ask_turn_on_gps_title">提高定位精準度?</string>
+    <string name="location_dialog_ask_turn_on_gps_message">本程式偵測到目前無使用GPS定位服務，如想獲得精確的位置紀錄服務，請前往設定頁面並開啟GPS服務，後稍後由您自行開啟。</string>
+    <string name="location_dialog_ask_turn_on_gps_positive">前往設定</string>
+
+    <!-- Alarm Service -->
+
+    <!-- Record Service -->
+    <string name="record_service_start">錄音任務已啟動</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Location Service -->
+    <string name="location_service_start">位置記錄任務已啟動</string>
+    
+    <!-- Map -->
+    <string name="map_marker_title_start">開始位置</string>
+    <string name="map_marker_title_end">結束位置</string>
+    <string name="map_marker_snippet_address">地址: %s</string>
+    <string name="map_marker_snippet_time">時間: %s</string>
+
+    <string formatted="false" name="map_total_distance">總距離: %s</string>
+    <string formatted="false" name="map_total_move_time">總移動時間: %s</string>
+    <string formatted="false" name="map_average_speed">平均速度: %s</string>
+    <string formatted="false" name="map_average_altitude">平均海拔: %s</string>
+    <string formatted="false" name="map_average_accuracy">平均精準度: %s</string>
+
+    <string name="map_unit_metric_km">公里</string>
+    <string name="map_unit_metric_m">公尺</string>
+    <string name="map_unit_metric_speed">公里/小時</string>
+    <string name="map_unit_imperial_mi">英哩</string>
+    <string name="map_unit_imperial_ft">英呎</string>
+    <string name="map_unit_imperial_speed">英哩/小時</string>
+
+
+    <!-- Settings -->
+    <string name="settings_category_general">一般</string>
+
+    <string name="settings_item_max_record_length">最長紀錄時間</string>
+    <string name="settings_max_record_length">%d 小時</string>
+    <string name="settings_dialog_max_record_length_title">設定最長紀錄時間</string>
+
+    <string name="settings_category_record">錄音</string>
+
+    <string name="settings_item_record_encoder">聲音編碼</string>
+    <string-array name="settings_encoders">
+        <item>最高品質 (AAC_LC)</item>
+        <item>較佳品質 (AMR_WB)</item>
+        <item>標準品質 (AMR_NB)</item>
+    </string-array>
+    <string name="settings_dialog_encoder_title">設定聲音編碼</string>
+
+    <string name="settings_item_record_quality">錄音品質</string>
+    <string-array name="settings_quality_levels">
+        <item>高 (44.1kHz/32kbps)</item>
+        <item>中 (22.05kHz/24kbps)</item>
+        <item>低 (11.025kHz/16kbps)</item>
+    </string-array>
+    <string name="settings_dialog_quality_title">設定錄音品質</string>
+
+    <string name="settings_category_location">位置</string>
+
+    <string name="settings_item_priority">位置取得能力</string>
+    <string-array name="settings_priority_level">
+        <item>盡可能獲得位置資訊</item>
+        <item>根據電量自動調整</item>
+        <item>節省電力</item>
+    </string-array>
+    <string name="settings_dialog_priority">設定位置取得能力</string>
+
+    <string name="settings_item_accuracy">GPS精準度</string>
+    <string-array name="settings_accuracy_meters">
+        <item>50 公尺 (建議值)</item>
+        <item>100 公尺</item>
+        <item>200 公尺</item>
+        <item>500 公尺</item>
+        <item>1000 公尺 (GPS訊號差)</item>
+    </string-array>
+    <string name="settings_dialog_accuracy_title">設定GPS精準度</string>
+
+    <string name="settings_item_time_slot">紀錄位置的時間間隔</string>
+    <string-array name="settings_time_slots">
+        <item>15 秒 (建議值)</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>2 分鐘</item>
+        <item>3 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+    </string-array>
+    <string name="settings_dialog_time_slot_title">設定時間間隔</string>
+
+    <string name="settings_item_unit">慣用單位</string>
+    <string-array name="settings_units">
+        <item>公制 (公里、公尺)</item>
+        <item>英制 (英里、英尺)</item>
+    </string-array>
+    <string name="settings_dialog_unit_title">設定慣用單位</string>
+
+    <string name="settings_category_other">其他</string>
+    <string name="settings_item_version_title">版本編號</string>
+    <string name="settings_item_legal">法律資訊</string>
+    <string name="settings_item_about">關於我</string>
+
+    <!-- Legal -->
+    <string name="legal_content">"
+1. 總則
+
+1.1 本應用程式為個人開發之應用程式(以下簡稱秘密任務代理人)，內容僅供用戶個人非商業用途使用。一旦使用本應用程式，包括所獲得之錄音檔及位置紀錄檔，即視為用戶已瞭解並完全同意本法律聲明中的所有條款，願意承擔瀏覽本應用程式的全部風險和法律責任。
+
+
+2. 服務條款
+
+2.1 本應用程式所有內容和軟體均按現狀提供，不帶有任何明示或暗示的擔保或條件，包括但不限於準確性、及時性和非侵權的默示擔保或保證。
+
+2.2 本應用程式僅提供相關的網絡內容服務，對於可能產生的網絡資費由電信運營商收取。
+
+2.3 本應用程式引用或連結的內容均為用戶提供方便服務而設，所連結網站、網站上的內容及其描述或提供的產品與服務均不受 秘密任務代理人 的控制， 因此 秘密任務代理人 不對任何該等網站及其上的內容、產品或服務（包括對第三方網站的進一步連結）負責，如用戶選擇使用該第三方網站，需承擔由此帶來的全部後果和風險。
+
+
+3. 知識產權聲明
+
+3.1 本應用程式上所有內容，包括但不限於本應用程式使用的所有商標、標識、企業名稱和標誌、文字、圖片、音頻、視頻、程序的全部內容，網站佈局、網頁設計、網站架構及資料編輯、使用軟體或程序，及其知識產權均屬於 秘密任務代理人 獨立擁有或與相關內容之合法權利人共同擁有。
+
+3.2 除非法律另有規定，未經 秘密任務代理人 書面授權，對 秘密任務代理人 擁有的版權和其他知識產權的任何內容，任何人不得擅自以任何形式複製、編輯、傳播、彙編、修改、下載、模仿、抄襲、重新發佈、鏡像、進行還原工程、解編或反向組譯，否則 秘密任務代理人 將依法追究法律責任。
+
+3.3 任何第三方在合理使用限度內轉載本應用程式上的內容，必須標明轉載內容的出處、原作者、連結，並不得刪除 秘密任務代理人 版權標誌（如有），否則 秘密任務代理人 將保留追究其法律責任的權利。
+
+
+4. 免責條款
+
+4.1 本應用程式對任何用戶或第三方任何損失，包括但不限於數據封包遺失、因複製或下載本應用程式內容或資料而造成的損失概不負責，不論其是否基於保證、合同、侵權行為、不法行為，或其它任何法律理論，也不論本應用程式是否已事先提示出現此類損失的可能性。
+
+4.2 本應用程式有權依照國家法律法規、規章及論壇規則、軟體中心規則對用戶在本應用程式上傳和發佈的資料和言論進行管理和監督，但並不對此承擔任何責任。
+
+4.3 因政府有權機關機構根據法律、行政法規的規定要求披露用戶個人資料的，本應用程式將根據法律規定或為公共安全目的向政府有權機關機構提供個人資料，且無須對此承擔任何責任。
+
+
+5. 適用法律和管轄權
+
+5.1 因本聲明或使用本應用程式所發生的爭議適用中華民國法律。
+
+5.2 因本聲明或使用本應用程式所發生的爭議，應當協商解決，協商不成的，各方一致同意由 秘密任務代理人 所在地人民法院訴訟解決。
+
+
+6. 其他
+
+6.1 秘密任務代理人 雖已採取合理措施避免程式中出現病毒，但應用程式上不存在絕對完善的安全措施，本應用程式無法對病毒做絕對保證，因此請用戶務必自行採取適當的安全防範措施。本應用程式對病毒不承擔任何責任。
+
+6.2 在法律允許的範圍內，本應用程式保留對本聲明的解釋和說明的權利。
+
+        "
+    </string>
+
+    <!-- About -->
+    <string name="about_title">關於本程式</string>
+    <string name="about_description">"
+本程式提供使用者可以自訂定時的錄音及位置紀錄服務。
+
+如同設定鬧鐘一般，完成紀錄後，可在錄音紀錄及位置紀錄列表中看到結果，並可點選結果左方的按鈕來欣賞。
+
+此為lite版本，完整版提供更多設定以及功能可以使用，歡迎前往下載。
+
+如果還有使用上的問題，歡迎來信詢問:"
+    </string>
+
+</resources>

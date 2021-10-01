@@ -1,0 +1,51 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <com.milk.secretagent.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tool_bar"
+            android:background="@color/ColorPrimary"
+            android:elevation="2dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabs"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/floating_button_margin_bottom"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:maxHeight="@dimen/floating_button_height"
+            android:maxWidth="@dimen/floating_button_width"
+            android:onClick="addTask"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_add_task" />
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

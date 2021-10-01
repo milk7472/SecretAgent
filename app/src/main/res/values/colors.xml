@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="ColorPrimary">#3B7FD9</color>-->
+    <color name="ColorPrimary">#9BCA3E</color>
+    <color name="ColorPrimaryDark">#92b847</color>
+    <!--<color name="tabsScrollColor">#004D40</color>-->
+    <color name="tabsBarColor">#F3E59A</color> // color of bottom bar
+    <color name="tabsTextColor">#88FFFFFF</color> // color of unselected text
+    <color name="tabsIndicatorColor">#FFFFFF</color>
+
+    <color name="divider_color">#DD999999</color>
+
+    <color name="secret_agent_red">#EC5357</color>
+    <color name="secret_agent_green">#9BCA3E</color>
+
+    <!-- CardView -->
+    <color name="cardTaskUpperColor">#C4C4C4</color>
+
+    <!-- Settings -->
+    <color name="settings_category_background_color">#d1d1d1</color>
+</resources>

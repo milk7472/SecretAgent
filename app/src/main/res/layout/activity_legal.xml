@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milk.secretagent.LegalActivity">
+
+    <TextView
+        android:id="@+id/legal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="7dp"
+        android:paddingBottom="10dp"
+        android:text="@string/title_activity_legal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/legal_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/legal_title"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:textColor="@android:color/white"
+        android:text="@string/legal_content"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

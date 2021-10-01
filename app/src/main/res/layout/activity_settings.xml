@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milk.secretagent.SettingsActivity">
+
+    <include
+        android:id="@+id/tool_bar_settings"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tool_bar_settings"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- category 一般 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settings_category_background_color"
+                android:paddingBottom="@dimen/settings_category_bottom"
+                android:paddingLeft="@dimen/settings_category_left"
+                android:paddingTop="@dimen/settings_category_top"
+                android:text="@string/settings_category_general"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!-- item 最長紀錄時間 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_record_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_max_record_length"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_record_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- category 錄音 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settings_category_background_color"
+                android:paddingBottom="@dimen/settings_category_bottom"
+                android:paddingLeft="@dimen/settings_category_left"
+                android:paddingTop="@dimen/settings_category_top"
+                android:text="@string/settings_category_record"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!-- item 聲音編碼 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_encoder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_record_encoder"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_encoder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- item 錄音品質 -->
+            <LinearLayout
+            android:id="@+id/settings_layout_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/settings_item_top"
+                android:paddingLeft="@dimen/settings_item_left"
+                android:paddingBottom="@dimen/settings_item_bottom"
+                android:text="@string/settings_item_record_quality"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                android:id="@+id/settings_quality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/settings_sub_item_top"
+                android:paddingLeft="@dimen/settings_sub_item_left"
+                android:paddingBottom="@dimen/settings_sub_item_bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+
+            <!-- category 位置 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settings_category_background_color"
+                android:paddingBottom="@dimen/settings_category_bottom"
+                android:paddingLeft="@dimen/settings_category_left"
+                android:paddingTop="@dimen/settings_category_top"
+                android:text="@string/settings_category_location"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!-- item 取得位置能力 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_priority"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- item GPS精準度 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_accuracy"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_accuracy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- item 紀錄位置的時間間隔 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_time_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_time_slot"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_time_slot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- item 慣用單位 -->
+            <LinearLayout
+                android:id="@+id/settings_layout_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_unit"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- category 其他 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settings_category_background_color"
+                android:paddingBottom="@dimen/settings_category_bottom"
+                android:paddingLeft="@dimen/settings_category_left"
+                android:paddingTop="@dimen/settings_category_top"
+                android:text="@string/settings_category_other"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!-- item 版本編號 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_item_top"
+                    android:paddingLeft="@dimen/settings_item_left"
+                    android:paddingBottom="@dimen/settings_item_bottom"
+                    android:text="@string/settings_item_version_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/settings_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/settings_sub_item_top"
+                    android:paddingLeft="@dimen/settings_sub_item_left"
+                    android:paddingBottom="@dimen/settings_sub_item_bottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+
+            <!-- item 法律資訊 -->
+            <TextView
+                android:id="@+id/settings_legal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/settings_single_item_top"
+                android:paddingLeft="@dimen/settings_single_item_left"
+                android:paddingBottom="@dimen/settings_single_item_bottom"
+                android:text="@string/settings_item_legal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <!-- item 關於我 -->
+            <TextView
+                android:id="@+id/settings_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/settings_single_item_top"
+                android:paddingLeft="@dimen/settings_single_item_left"
+                android:paddingBottom="@dimen/settings_single_item_bottom"
+                android:text="@string/settings_item_about"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
